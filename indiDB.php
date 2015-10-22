@@ -1,6 +1,6 @@
 <?php
     // Connect to the database management system
-	$dbConnect = mysql_connect("us-cdbr-azure-west-c.cloudapp.net","bd377ee286e9fc","4e7a8a97") or 
+	$dbConnect = mysql_connect("us-cdbr-azure-west-c.cloudapp.net:3306","bd377ee286e9fc","4e7a8a97") or 
 	die ("Can not connect: ".mysql_error());
 	
 	//Select the database
