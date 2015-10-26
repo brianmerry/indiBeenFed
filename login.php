@@ -1,6 +1,6 @@
 <?php 
 
-include("include/overall/header.php");
+//include("include/overall/header.php");
 
 include("core/init.php");
 
