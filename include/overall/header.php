@@ -7,4 +7,4 @@
 	date_default_timezone_set('America/Los_Angeles');?>
 	
 		<?php include("include/header.php");?>
-		<!--<center>-->
+		<center>
