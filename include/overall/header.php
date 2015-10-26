@@ -8,3 +8,4 @@
 	
 		<?php include("include/header.php");?>
 		<center>
+		<body>
