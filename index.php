@@ -1,5 +1,5 @@
 <?php
-include("include/overall/header.php");
+//include("include/overall/header.php");
 include("core/init.php");
 echo "<br /><br/><br />";
 	$query= mysql_query("SELECT * FROM `morning` WHERE `fed` ='1'")or die(mysql_error());
