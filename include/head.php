@@ -8,4 +8,4 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<title>Has Indi Been Fed?</title>
 	<meta charset="UTF-8">
-	</head>
+	
