@@ -1,3 +1,4 @@
+<body>
 <?php
 include("include/overall/header.php");
 include("core/init.php");
@@ -18,3 +19,4 @@ if (!logged_in()) {
 }
 ?>
 <?php include("include/overall/footer.php");?>
+</body>
