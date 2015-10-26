@@ -18,7 +18,7 @@
 	function login($name, $password) {
 		$user_id = user_id_from_username($name);
 		$name = sanitize($name);
-		$password = md5($password);
+		//$password = md5($password);
 		$query=mysql_query("SELECT COUNT(`ID`) FROM `humans` WHERE `name` = '$name' AND `password` = '$password'");
 		return (mysql_result($query, 0) == 1) ? $user_id : false;
 	}
