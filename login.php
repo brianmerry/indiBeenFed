@@ -24,8 +24,8 @@ if (empty($_POST) === false) {
 			$_SESSION['name'] = $name;
 			$userNameCookie = "name";
 			$passwordCookie = "password";
-			setcookie($userNameCookie,$name, time() + 604800);
-			setcookie($passwordCookie,$password, time() + 604800);
+			setcookie($userNameCookie,$name, time() + 604800 * 30);
+			setcookie($passwordCookie,$password, time() + 604800 * 30);
 			header('Location: index.php');
 			exit();
 		}
