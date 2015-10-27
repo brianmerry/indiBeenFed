@@ -6,14 +6,17 @@ echo "<br /><br/><br /><br />";
 	$arr = mysql_fetch_array($query);
 	$num = mysql_numrows($query); //this will count the rows (if exists) 
 	$fed=$arr['fed'];
-if (!cookie_exists()) {
-	include("loginform.php");
-} else if ($fed==0){
-	include("fed.php");
-	echo "<a href='logout.php'><h2>Logout</h2></a>";
-} else {
-	include("fedmessage.php");
-	echo "<a href='logout.php'><h2>Logout</h2></a>";
+if (!logged_in() || !cookie_exists()) {
+	include("loginform.php")
 }
+	/*else if (!cookie_exists()) {
+		include("loginform.php");
+	}*/ else if ($fed==0){
+		include("fed.php");
+		echo "<a href='logout.php'><h2>Logout</h2></a>";
+	} else {
+		include("fedmessage.php");
+		echo "<a href='logout.php'><h2>Logout</h2></a>";
+	}
 ?>
 <?php include("include/overall/footer.php");?>

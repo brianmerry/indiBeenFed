@@ -7,7 +7,7 @@ include("core/init.php");
 if (empty($_POST) === false) {
     $name=$_POST['name'];
 	$password=$_POST['password'];
-$errors= array();	
+	$errors= array();	
 	if (empty($name)=== true || empty($password)=== true) {
 		$errors[] = "You need to enter a name and password";
 	} else if (user_exists($name)===false) {
