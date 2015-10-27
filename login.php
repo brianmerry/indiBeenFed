@@ -5,6 +5,8 @@ include("include/overall/header.php");
 include("core/init.php");
 
 if (empty($_POST) === false) {
+    $name=$_POST['name'];
+	$password=$_POST['password'];
 $errors= array();	
 	if (empty($name)=== true || empty($password)=== true) {
 		$errors[] = "You need to enter a name and password";
@@ -20,7 +22,8 @@ $errors= array();
 		else {
 			$_SESSION['ID'] = $login;
 			$_SESSION['name'] = $name;
-			$userNameCookie = "name"
+			$userNameCookie = "name";
+			$passwordCookie = "password";
 			setcookie($userNameCookie,$name, time() + 604800);
 			setcookie($passwordCookie,$password, time() + 604800);
 			header('Location: index.php');
