@@ -6,8 +6,7 @@ echo "<br /><br/><br /><br />";
 	$arr = mysql_fetch_array($query);
 	$num = mysql_numrows($query); //this will count the rows (if exists) 
 	$fed=$arr['fed'];
-	
-if (!logged_in()) {
+if (!cookie_exists()) {
 	include("loginform.php");
 } else if ($fed==0){
 	include("fed.php");
