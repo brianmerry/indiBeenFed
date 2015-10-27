@@ -47,7 +47,7 @@
 		
 	}
 	function cookie_exists() {
-		if(isset($_COOKIE[$userNameCookie] && isset($_COOKIE[$passwordCookie]) {
+		if(isset($_COOKIE[$userNameCookie] && isset($_COOKIE[$passwordCookie])) {
 			return true;
 		} else {
 			return false;
