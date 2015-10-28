@@ -21,10 +21,10 @@ include('core/database/connect.php');
 	$_SESSION['hours']=$hours;
 	$_SESSION['minutes']=$minutes;
 	if ($fed==1) {
-	mysqli_query("DELETE FROM `morning` WHERE fed=1", $dbLocalHost);
+	mysqli_query($connect, "DELETE FROM morning");
 	mysql_query("INSERT INTO `morning` (`fed`,`time`,`feeder`) VALUES ('$fed','$time','$name')", $dbLocalhost) or
 	die ("Problem reading table: ".mysql_error());
-		$morning=array();	
+		$morning=array();
 	header("Location:index.php");
 	} else {
 	header("Location:index.php");
