@@ -21,6 +21,7 @@ include('core/database/connect.php');
 	$_SESSION['hours']=$hours;
 	$_SESSION['minutes']=$minutes;
 	if ($fed==1) {
+	mysqli_query("DELETE FROM `morning` WHERE fed=1", $dbLocalHost);
 	mysql_query("INSERT INTO `morning` (`fed`,`time`,`feeder`) VALUES ('$fed','$time','$name')", $dbLocalhost) or
 	die ("Problem reading table: ".mysql_error());
 		$morning=array();	

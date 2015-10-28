@@ -16,6 +16,7 @@ if (!logged_in()/* || !cookie_exists()*/) {
 		echo "<a href='logout.php'><h2>Logout</h2></a>";
 	} else {
 		include("fedmessage.php");
+		include("fed.php");
 		echo "<a href='logout.php'><h2>Logout</h2></a>";
 	}
 ?>
