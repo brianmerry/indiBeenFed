@@ -1,8 +1,6 @@
 	<head>
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<meta name="viewport" content="width=device-width">
-	<meta name ="viewport" content = "user-scalable=no">
-	<meta name="viewport" content="initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 	<link rel="apple-touch-icon" size="57x57" href="images/startup.jpg">
 	<link rel="apple-touch-startup-image" href="images/startup.jpg">
 	<meta name="apple-mobile-web-app-title" content="iFedIndi">
