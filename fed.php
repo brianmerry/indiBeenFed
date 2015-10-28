@@ -19,5 +19,5 @@ function yes() {
 <form method="POST" action="submitmorning.php" id="form">
 <table style="text-align:center" width="25%">
 <tr><td><input type="radio" name="fed" id="fed" value="0" hidden></td><td><input type="radio" name="fed" id="fed1" value="1" hidden></td></tr>
-<tr><td><h1><a href="" onclick="no()">NO</a></h1></td><td><h1><a href="" onclick="yes()">YES</a></h1></td></tr>
+<tr><td><h1><a href="#" onclick="no()">NO</a></h1></td><td><h1><a href="#" onclick="yes()">YES</a></h1></td></tr>
 </form></table>
