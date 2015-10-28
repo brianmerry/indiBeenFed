@@ -5,5 +5,5 @@
 	
 	$name=$arr['feeder'];
 	$time=$arr['time'];
-	echo "<center><h1>$name fed Indi at $time.</h1></center>";
+	echo "<center><h1><u><b>$name fed Indi at $time.</b></u></h1></center>";
 ?>
